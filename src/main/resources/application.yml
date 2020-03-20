@@ -1,0 +1,29 @@
+## Spring DATASOURCE (DataSourceAutoConfiguration & DataSourceProperties)
+spring:
+#  jackson:
+#    date-format: yyyy-MM-dd'T'HH:mm:ss
+#    time-zone: GMT+6
+
+## Hibernate Properties
+# The SQL dialect makes Hibernate generate better SQL for the chosen database
+  jpa:
+    hibernate:
+      # Hibernate ddl auto (create, create-drop, validate, update): For initital Data Please modify update to create-drop
+      ddl-auto: create
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+        format_sql: true
+    show-sql: true
+
+## MULTIPART (MultipartProperties)
+# Enable multipart uploads
+  servlet:
+    multipart:
+      enabled: true
+      # Threshold after which files are written to disk.
+      file-size-threshold: 2KB
+      # Max file size.
+      max-file-size: 200MB
+      # Max Request Size
+      max-request-size: 215MB
