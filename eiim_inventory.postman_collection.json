@@ -1,0 +1,568 @@
+{
+	"info": {
+		"_postman_id": "821cca2c-37ba-4226-abd2-562b000efd61",
+		"name": "eiim_inventory",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:9191/api/v1.0/user",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9191/api/v1.0/user",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9191",
+					"path": [
+						"api",
+						"v1.0",
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9191/api/v1.0/user/1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9191/api/v1.0/user/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9191",
+					"path": [
+						"api",
+						"v1.0",
+						"user",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9191/api/v1.0/user",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"firstName\" : \"Md. Emran\",\n\t\"lastName\" : \"Hossain\",\n\t\"email\" : \"emranhos3@gmail.com\",\n\t\"phoneNo\" : \"01670987661\",\n\t\"address\" : \"Dhaka\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9191/api/v1.0/user",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9191",
+					"path": [
+						"api",
+						"v1.0",
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9191/api/v1.0/user",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"firstName\" : \"Md. Emran\",\n\t\"lastName\" : \"Hossain\",\n\t\"email\" : \"emranhos1@gmail.com\",\n\t\"phoneNo\" : \"01670987661\",\n\t\"address\" : \"Dhaka\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9191/api/v1.0/user/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9191",
+					"path": [
+						"api",
+						"v1.0",
+						"user",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9191/api/v1.0/vendor",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9191/api/v1.0/vendor",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9191",
+					"path": [
+						"api",
+						"v1.0",
+						"vendor"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9191/api/v1.0/vendor/1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9191/api/v1.0/vendor/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9191",
+					"path": [
+						"api",
+						"v1.0",
+						"vendor",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9191/api/v1.0/vendor",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"vendorFirstName\" : \"VENDOR5\",\n\t\"vendorLastName\" : \"VENDOR5\",\n\t\"vendorBusinessName\" : \"Transport\",\n\t\"vendorEmail\" : \"vendor5@gmail.com\",\n\t\"vendorPhoneNo\" : \"01670987661\",\n\t\"vendorAddress\" : \"Dhaka\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9191/api/v1.0/vendor",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9191",
+					"path": [
+						"api",
+						"v1.0",
+						"vendor"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9191/api/v1.0/vendor/1",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"vendorFirstName\": \"VENDOR1\",\r\n        \"vendorLastName\": \"VENDOR1\",\r\n        \"vendorBusinessName\": \"DDDD\",\r\n        \"vendorEmail\": \"vendor1@gmail.com\",\r\n        \"vendorPhoneNo\": \"01670932273\",\r\n        \"vendorAddress\": \"Dhaka\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9191/api/v1.0/vendor/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9191",
+					"path": [
+						"api",
+						"v1.0",
+						"vendor",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9191/api/v1.0/role",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9191/api/v1.0/role",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9191",
+					"path": [
+						"api",
+						"v1.0",
+						"role"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9191/api/v1.0/role/1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9191/api/v1.0/role/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9191",
+					"path": [
+						"api",
+						"v1.0",
+						"role",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9191/api/v1.0/distributor",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9191/api/v1.0/distributor",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9191",
+					"path": [
+						"api",
+						"v1.0",
+						"distributor"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9191/api/v1.0/distributor/1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9191/api/v1.0/distributor/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9191",
+					"path": [
+						"api",
+						"v1.0",
+						"distributor",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9191/api/v1.0/distributor",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"distributorFirstName\": \"Md. XXX\",\r\n    \"distributorLastName\": \"XXX\",\r\n    \"businessName\": \"XXX\",\r\n    \"distributorEmail\": \"emranhos5@gmail.com\",\r\n    \"distributorPhoneNo\": \"01670932273\",\r\n    \"distributorAddress\": \"Dhaka\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9191/api/v1.0/distributor",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9191",
+					"path": [
+						"api",
+						"v1.0",
+						"distributor"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9191/api/v1.0/distributor/5",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"distributorFirstName\": \"Md. XXX\",\r\n    \"distributorLastName\": \"YYY\",\r\n    \"businessName\": \"XXX\",\r\n    \"distributorEmail\": \"emranhos5@gmail.com\",\r\n    \"distributorPhoneNo\": \"01670932273\",\r\n    \"distributorAddress\": \"Dhaka\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9191/api/v1.0/distributor/5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9191",
+					"path": [
+						"api",
+						"v1.0",
+						"distributor",
+						"5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9191/api/v1.0/transport",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9191/api/v1.0/transport",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9191",
+					"path": [
+						"api",
+						"v1.0",
+						"transport"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9191/api/v1.0/transport/1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9191/api/v1.0/transport/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9191",
+					"path": [
+						"api",
+						"v1.0",
+						"transport",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9191/api/v1.0/shipment",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9191/api/v1.0/shipment",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9191",
+					"path": [
+						"api",
+						"v1.0",
+						"shipment"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9191/api/v1.0/shipment/1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9191/api/v1.0/shipment/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9191",
+					"path": [
+						"api",
+						"v1.0",
+						"shipment",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9191/api/v1.0/shipment",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"distributorId\": \"3\",\n    \"product\": \"PC\",\n    \"productQty\": 100,\n    \"amount\": \"10000\",\n    \"dueAmount\": \"20000\",\n    \"deliveryDate\": \"2020-03-21T12:55:11\",\n    \"transportId\": \"2\",\n    \"transportContactNo\": \"099878172375\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9191/api/v1.0/shipment",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9191",
+					"path": [
+						"api",
+						"v1.0",
+						"shipment"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9191/api/v1.0/shipment/5",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"distributorId\": \"3\",\n    \"product\": \"PC\",\n    \"productQty\": 100,\n    \"amount\": \"10000\",\n    \"dueAmount\": \"20000\",\n    \"deliveryDate\": \"2020-03-21T12:55:11\",\n    \"transportId\": \"2\",\n    \"transportContactNo\": \"099878172375\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9191/api/v1.0/shipment/5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9191",
+					"path": [
+						"api",
+						"v1.0",
+						"shipment",
+						"5"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
