@@ -27,7 +27,9 @@ public class T01007RowMapper implements RowMapper<T01007Pojo> {
         pojo.setVendorLastName(rs.getString("t_vendor_last_name"));
         pojo.setVendorBusinessName(rs.getString("t_vendor_business_name"));
         pojo.setVendorPhoneNo(rs.getString("t_vendor_phone_no"));
+        pojo.setVendorId(rs.getString("t_vendor_id"));
 
+        pojo.setTransportId(rs.getString("t_transport_id"));
         pojo.setTransportName(rs.getString("t_transport_name"));
         pojo.setTransportContactNo(rs.getString("t_transport_contact_no"));
 

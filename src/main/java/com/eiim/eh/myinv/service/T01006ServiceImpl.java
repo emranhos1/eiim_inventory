@@ -29,7 +29,7 @@ public class T01006ServiceImpl implements T01006Service {
     public List<T01006Pojo> findAll() {
         //return t01006Repository.findAll();
         String sql = "SELECT s.*, d.t_business_name, d.t_distributor_first_name, d.t_distributor_last_name, "
-                   + "d.t_distributor_phone_no, t.t_transport_name "
+                   + "d.t_distributor_phone_no, d.t_distributor_id, t.t_transport_id, t.t_transport_name "
                    + "FROM T01006 s "
                    + "LEFT JOIN T01004 d ON s.t_distributor_id = d.t_distributor_id "
                    + "LEFT JOIN T01005 t ON s.t_transport_id = t.t_transport_id";
@@ -40,7 +40,7 @@ public class T01006ServiceImpl implements T01006Service {
     public T01006Pojo findById(int shipmentCode) {
         //return t01006Repository.findByShipmentId(shipmentCode);
         String sql = "SELECT s.*, d.t_business_name, d.t_distributor_first_name, d.t_distributor_last_name, "
-                + "d.t_distributor_phone_no, t.t_transport_name "
+                + "d.t_distributor_phone_no, d.t_distributor_id, t.t_transport_id, t.t_transport_name "
                 + "FROM T01006 s "
                 + "LEFT JOIN T01004 d ON s.t_distributor_id = d.t_distributor_id "
                 + "LEFT JOIN T01005 t ON s.t_transport_id = t.t_transport_id "

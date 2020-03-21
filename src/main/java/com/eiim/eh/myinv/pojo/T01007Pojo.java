@@ -28,7 +28,9 @@ public class T01007Pojo {
     private String vendorLastName;
     private String vendorBusinessName;
     private String vendorPhoneNo;
+    private String vendorId;
 
+    private String transportId;
     private String transportName;
     private String transportContactNo;
 
@@ -150,5 +152,21 @@ public class T01007Pojo {
 
     public void setVendorPhoneNo(String vendorPhoneNo) {
         this.vendorPhoneNo = vendorPhoneNo;
+    }
+
+    public String getVendorId() {
+        return vendorId;
+    }
+
+    public void setVendorId(String vendorId) {
+        this.vendorId = vendorId;
+    }
+
+    public String getTransportId() {
+        return transportId;
+    }
+
+    public void setTransportId(String transportId) {
+        this.transportId = transportId;
     }
 }

@@ -27,7 +27,9 @@ public class T01006RowMapper implements RowMapper<T01006Pojo> {
         pojo.setDistributorLastName(rs.getString("t_distributor_last_name"));
         pojo.setDistributorBusinessName(rs.getString("t_business_name"));
         pojo.setDistributorPhoneNo(rs.getString("t_distributor_phone_no"));
+        pojo.setDistributorId(rs.getString("t_distributor_id"));
 
+        pojo.setTransportId(rs.getString("t_transport_id"));
         pojo.setTransportName(rs.getString("t_transport_name"));
         pojo.setTransportContactNo(rs.getString("t_transport_contact_no"));
 
