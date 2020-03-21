@@ -9,7 +9,7 @@ spring:
   jpa:
     hibernate:
       # Hibernate ddl auto (create, create-drop, validate, update): For initital Data Please modify update to create-drop
-      ddl-auto: create
+      ddl-auto: update
     properties:
       hibernate:
         dialect: org.hibernate.dialect.MySQL5InnoDBDialect

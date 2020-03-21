@@ -562,6 +562,124 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "http://localhost:9191/api/v1.0/order",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9191/api/v1.0/order",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9191",
+					"path": [
+						"api",
+						"v1.0",
+						"order"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9191/api/v1.0/order/1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9191/api/v1.0/order/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9191",
+					"path": [
+						"api",
+						"v1.0",
+						"order",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9191/api/v1.0/order",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"product\": \"PC\",\r\n    \"productQty\": 100,\r\n    \"amount\": \"10000\",\r\n    \"dueAmount\": \"20000\",\r\n    \"deliveryDate\": \"2020-03-30T04:55:40.000+0000\",\r\n    \"vendorId\": \"3\",\r\n    \"transportId\": \"2\",\r\n    \"transportContactNo\" : \"12341244\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9191/api/v1.0/order",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9191",
+					"path": [
+						"api",
+						"v1.0",
+						"order"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9191/api/v1.0/order/5",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"product\": \"PC\",\r\n    \"productQty\": 100,\r\n    \"amount\": \"200\",\r\n    \"dueAmount\": \"100\",\r\n    \"deliveryDate\": \"2020-03-30T04:55:40.000+0000\",\r\n    \"vendorId\": \"3\",\r\n    \"transportId\": \"2\",\r\n    \"transportContactNo\" : \"01283736436\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9191/api/v1.0/order/5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9191",
+					"path": [
+						"api",
+						"v1.0",
+						"order",
+						"5"
+					]
+				}
+			},
+			"response": []
 		}
 	],
 	"protocolProfileBehavior": {}
