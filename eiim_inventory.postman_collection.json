@@ -6,19 +6,19 @@
 	},
 	"item": [
 		{
-			"name": "http://localhost:9191/api/v1.0/user",
+			"name": "http://localhost:9191/rest/v1.0/user",
 			"request": {
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:9191/api/v1.0/user",
+					"raw": "http://localhost:9191/rest/v1.0/user",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"port": "9191",
 					"path": [
-						"api",
+						"rest",
 						"v1.0",
 						"user"
 					]
@@ -27,19 +27,19 @@
 			"response": []
 		},
 		{
-			"name": "http://localhost:9191/api/v1.0/user/1",
+			"name": "http://localhost:9191/rest/v1.0/user/1",
 			"request": {
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:9191/api/v1.0/user/1",
+					"raw": "http://localhost:9191/rest/v1.0/user/1",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"port": "9191",
 					"path": [
-						"api",
+						"rest",
 						"v1.0",
 						"user",
 						"1"
@@ -49,7 +49,7 @@
 			"response": []
 		},
 		{
-			"name": "http://localhost:9191/api/v1.0/user",
+			"name": "http://localhost:9191/rest/v1.0/user",
 			"request": {
 				"method": "POST",
 				"header": [
@@ -70,14 +70,14 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:9191/api/v1.0/user",
+					"raw": "http://localhost:9191/rest/v1.0/user",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"port": "9191",
 					"path": [
-						"api",
+						"rest",
 						"v1.0",
 						"user"
 					]
@@ -86,7 +86,7 @@
 			"response": []
 		},
 		{
-			"name": "http://localhost:9191/api/v1.0/user",
+			"name": "http://localhost:9191/rest/v1.0/user",
 			"request": {
 				"method": "PUT",
 				"header": [
@@ -107,14 +107,14 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:9191/api/v1.0/user/1",
+					"raw": "http://localhost:9191/rest/v1.0/user/1",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"port": "9191",
 					"path": [
-						"api",
+						"rest",
 						"v1.0",
 						"user",
 						"1"
@@ -124,19 +124,19 @@
 			"response": []
 		},
 		{
-			"name": "http://localhost:9191/api/v1.0/vendor",
+			"name": "http://localhost:9191/rest/v1.0/vendor",
 			"request": {
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:9191/api/v1.0/vendor",
+					"raw": "http://localhost:9191/rest/v1.0/vendor",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"port": "9191",
 					"path": [
-						"api",
+						"rest",
 						"v1.0",
 						"vendor"
 					]
@@ -145,19 +145,19 @@
 			"response": []
 		},
 		{
-			"name": "http://localhost:9191/api/v1.0/vendor/1",
+			"name": "http://localhost:9191/rest/v1.0/vendor/1",
 			"request": {
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:9191/api/v1.0/vendor/1",
+					"raw": "http://localhost:9191/rest/v1.0/vendor/1",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"port": "9191",
 					"path": [
-						"api",
+						"rest",
 						"v1.0",
 						"vendor",
 						"1"
@@ -167,7 +167,7 @@
 			"response": []
 		},
 		{
-			"name": "http://localhost:9191/api/v1.0/vendor",
+			"name": "http://localhost:9191/rest/v1.0/vendor",
 			"request": {
 				"method": "POST",
 				"header": [
@@ -188,14 +188,14 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:9191/api/v1.0/vendor",
+					"raw": "http://localhost:9191/rest/v1.0/vendor",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"port": "9191",
 					"path": [
-						"api",
+						"rest",
 						"v1.0",
 						"vendor"
 					]
@@ -204,7 +204,7 @@
 			"response": []
 		},
 		{
-			"name": "http://localhost:9191/api/v1.0/vendor/1",
+			"name": "http://localhost:9191/rest/v1.0/vendor/1",
 			"request": {
 				"method": "PUT",
 				"header": [
@@ -225,14 +225,14 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:9191/api/v1.0/vendor/1",
+					"raw": "http://localhost:9191/rest/v1.0/vendor/1",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"port": "9191",
 					"path": [
-						"api",
+						"rest",
 						"v1.0",
 						"vendor",
 						"1"
@@ -242,19 +242,19 @@
 			"response": []
 		},
 		{
-			"name": "http://localhost:9191/api/v1.0/role",
+			"name": "http://localhost:9191/rest/v1.0/role",
 			"request": {
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:9191/api/v1.0/role",
+					"raw": "http://localhost:9191/rest/v1.0/role",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"port": "9191",
 					"path": [
-						"api",
+						"rest",
 						"v1.0",
 						"role"
 					]
@@ -263,19 +263,19 @@
 			"response": []
 		},
 		{
-			"name": "http://localhost:9191/api/v1.0/role/1",
+			"name": "http://localhost:9191/rest/v1.0/role/1",
 			"request": {
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:9191/api/v1.0/role/1",
+					"raw": "http://localhost:9191/rest/v1.0/role/1",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"port": "9191",
 					"path": [
-						"api",
+						"rest",
 						"v1.0",
 						"role",
 						"1"
@@ -285,19 +285,19 @@
 			"response": []
 		},
 		{
-			"name": "http://localhost:9191/api/v1.0/distributor",
+			"name": "http://localhost:9191/rest/v1.0/distributor",
 			"request": {
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:9191/api/v1.0/distributor",
+					"raw": "http://localhost:9191/rest/v1.0/distributor",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"port": "9191",
 					"path": [
-						"api",
+						"rest",
 						"v1.0",
 						"distributor"
 					]
@@ -306,19 +306,19 @@
 			"response": []
 		},
 		{
-			"name": "http://localhost:9191/api/v1.0/distributor/1",
+			"name": "http://localhost:9191/rest/v1.0/distributor/1",
 			"request": {
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:9191/api/v1.0/distributor/1",
+					"raw": "http://localhost:9191/rest/v1.0/distributor/1",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"port": "9191",
 					"path": [
-						"api",
+						"rest",
 						"v1.0",
 						"distributor",
 						"1"
@@ -328,7 +328,7 @@
 			"response": []
 		},
 		{
-			"name": "http://localhost:9191/api/v1.0/distributor",
+			"name": "http://localhost:9191/rest/v1.0/distributor",
 			"request": {
 				"method": "POST",
 				"header": [
@@ -349,14 +349,14 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:9191/api/v1.0/distributor",
+					"raw": "http://localhost:9191/rest/v1.0/distributor",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"port": "9191",
 					"path": [
-						"api",
+						"rest",
 						"v1.0",
 						"distributor"
 					]
@@ -365,7 +365,7 @@
 			"response": []
 		},
 		{
-			"name": "http://localhost:9191/api/v1.0/distributor/5",
+			"name": "http://localhost:9191/rest/v1.0/distributor/5",
 			"request": {
 				"method": "PUT",
 				"header": [
@@ -386,14 +386,14 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:9191/api/v1.0/distributor/5",
+					"raw": "http://localhost:9191/rest/v1.0/distributor/5",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"port": "9191",
 					"path": [
-						"api",
+						"rest",
 						"v1.0",
 						"distributor",
 						"5"
@@ -403,19 +403,19 @@
 			"response": []
 		},
 		{
-			"name": "http://localhost:9191/api/v1.0/transport",
+			"name": "http://localhost:9191/rest/v1.0/transport",
 			"request": {
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:9191/api/v1.0/transport",
+					"raw": "http://localhost:9191/rest/v1.0/transport",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"port": "9191",
 					"path": [
-						"api",
+						"rest",
 						"v1.0",
 						"transport"
 					]
@@ -424,19 +424,19 @@
 			"response": []
 		},
 		{
-			"name": "http://localhost:9191/api/v1.0/transport/1",
+			"name": "http://localhost:9191/rest/v1.0/transport/1",
 			"request": {
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:9191/api/v1.0/transport/1",
+					"raw": "http://localhost:9191/rest/v1.0/transport/1",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"port": "9191",
 					"path": [
-						"api",
+						"rest",
 						"v1.0",
 						"transport",
 						"1"
@@ -446,19 +446,19 @@
 			"response": []
 		},
 		{
-			"name": "http://localhost:9191/api/v1.0/shipment",
+			"name": "http://localhost:9191/rest/v1.0/shipment",
 			"request": {
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:9191/api/v1.0/shipment",
+					"raw": "http://localhost:9191/rest/v1.0/shipment",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"port": "9191",
 					"path": [
-						"api",
+						"rest",
 						"v1.0",
 						"shipment"
 					]
@@ -467,19 +467,19 @@
 			"response": []
 		},
 		{
-			"name": "http://localhost:9191/api/v1.0/shipment/1",
+			"name": "http://localhost:9191/rest/v1.0/shipment/1",
 			"request": {
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:9191/api/v1.0/shipment/1",
+					"raw": "http://localhost:9191/rest/v1.0/shipment/1",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"port": "9191",
 					"path": [
-						"api",
+						"rest",
 						"v1.0",
 						"shipment",
 						"1"
@@ -489,15 +489,15 @@
 			"response": []
 		},
 		{
-			"name": "http://localhost:9191/api/v1.0/shipment",
+			"name": "http://localhost:9191/rest/v1.0/shipment",
 			"request": {
 				"method": "POST",
 				"header": [
 					{
 						"key": "Content-Type",
 						"name": "Content-Type",
-						"value": "application/json",
-						"type": "text"
+						"type": "text",
+						"value": "application/json"
 					}
 				],
 				"body": {
@@ -510,14 +510,14 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:9191/api/v1.0/shipment",
+					"raw": "http://localhost:9191/rest/v1.0/shipment",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"port": "9191",
 					"path": [
-						"api",
+						"rest",
 						"v1.0",
 						"shipment"
 					]
@@ -526,7 +526,7 @@
 			"response": []
 		},
 		{
-			"name": "http://localhost:9191/api/v1.0/shipment/5",
+			"name": "http://localhost:9191/rest/v1.0/shipment/5",
 			"request": {
 				"method": "PUT",
 				"header": [
@@ -547,14 +547,14 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:9191/api/v1.0/shipment/5",
+					"raw": "http://localhost:9191/rest/v1.0/shipment/5",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"port": "9191",
 					"path": [
-						"api",
+						"rest",
 						"v1.0",
 						"shipment",
 						"5"
@@ -564,19 +564,19 @@
 			"response": []
 		},
 		{
-			"name": "http://localhost:9191/api/v1.0/order",
+			"name": "http://localhost:9191/rest/v1.0/order",
 			"request": {
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:9191/api/v1.0/order",
+					"raw": "http://localhost:9191/rest/v1.0/order",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"port": "9191",
 					"path": [
-						"api",
+						"rest",
 						"v1.0",
 						"order"
 					]
@@ -585,19 +585,19 @@
 			"response": []
 		},
 		{
-			"name": "http://localhost:9191/api/v1.0/order/1",
+			"name": "http://localhost:9191/rest/v1.0/order/1",
 			"request": {
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:9191/api/v1.0/order/1",
+					"raw": "http://localhost:9191/rest/v1.0/order/1",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"port": "9191",
 					"path": [
-						"api",
+						"rest",
 						"v1.0",
 						"order",
 						"1"
@@ -607,7 +607,7 @@
 			"response": []
 		},
 		{
-			"name": "http://localhost:9191/api/v1.0/order",
+			"name": "http://localhost:9191/rest/v1.0/order",
 			"request": {
 				"method": "POST",
 				"header": [
@@ -628,14 +628,14 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:9191/api/v1.0/order",
+					"raw": "http://localhost:9191/rest/v1.0/order",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"port": "9191",
 					"path": [
-						"api",
+						"rest",
 						"v1.0",
 						"order"
 					]
@@ -644,7 +644,7 @@
 			"response": []
 		},
 		{
-			"name": "http://localhost:9191/api/v1.0/order/5",
+			"name": "http://localhost:9191/rest/v1.0/order/5",
 			"request": {
 				"method": "PUT",
 				"header": [
@@ -665,14 +665,14 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:9191/api/v1.0/order/5",
+					"raw": "http://localhost:9191/rest/v1.0/order/5",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"port": "9191",
 					"path": [
-						"api",
+						"rest",
 						"v1.0",
 						"order",
 						"5"

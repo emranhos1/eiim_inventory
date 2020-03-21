@@ -23,7 +23,7 @@ import com.eiim.eh.myinv.service.T01001Service;
  * @create  : 2020-03-19T09:11:00
  */
 @RestController
-@RequestMapping("/api/v1.0/user")
+@RequestMapping("/rest/v1.0/user")
 public class T01001Controller {
 
     @Autowired
