@@ -29,7 +29,7 @@ public class T01001ServiceImpl implements T01001Service {
     @Override
     public List<T01001Pojo> findAll() {
         //return t01001Repository.findAll();
-        String sql = "SELECT u.*, r.t_role_name roleName "
+        String sql = "SELECT u.*, r.t_role_id, r.t_role_name "
                    + "FROM T01001 u LEFT JOIN T01003 r "
                    + "ON (u.t_role_id = r.t_role_id)";
         return jdbcTemplate.query( sql, new T01001RowMapper());
@@ -38,7 +38,7 @@ public class T01001ServiceImpl implements T01001Service {
     @Override
     public T01001Pojo findByUserCode(int userCode) {
         //return t01001Repository.findByUserId(userCode);
-        String sql = "SELECT u.*, r.t_role_name roleName "
+        String sql = "SELECT u.*, r.t_role_id, r.t_role_name "
                    + "FROM T01001 u LEFT JOIN T01003 r "
                    + "ON (u.t_role_id = r.t_role_id) "
                    + "WHERE u.t_user_id = ?";

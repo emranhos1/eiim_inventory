@@ -19,7 +19,8 @@ public class T01001RowMapper implements RowMapper<T01001Pojo> {
         pojo.setEmail(rs.getString("t_email"));
         pojo.setPhoneNo(rs.getString("t_phone_no"));
         pojo.setAddress(rs.getString("t_address"));
-        pojo.setRoleName(rs.getString("roleName"));
+        pojo.setRoleId(rs.getInt("t_role_id"));
+        pojo.setRoleName(rs.getString("t_role_name"));
         pojo.setIsActive(rs.getInt("t_is_active"));
         pojo.setEntryDate(rs.getTimestamp("t_entry_date"));
         pojo.setUpdateDate(rs.getTimestamp("t_update_date"));

@@ -16,6 +16,7 @@ public class T01001Pojo {
     private String email;
     private String phoneNo;
     private String address;
+    private int roleId;
     private String roleName;
     private int isActive;
     @DateTimeFormat(pattern = "yyyy-MM-dd'T'HH:mm:ss")
@@ -69,6 +70,14 @@ public class T01001Pojo {
 
     public void setAddress(String address) {
         this.address = address;
+    }
+
+    public int getRoleId() {
+        return roleId;
+    }
+
+    public void setRoleId(int roleId) {
+        this.roleId = roleId;
     }
 
     public String getRoleName() {
