@@ -680,6 +680,328 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "http://localhost:9191/rest/v1.0/payment_method",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9191/rest/v1.0/payment_method",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9191",
+					"path": [
+						"rest",
+						"v1.0",
+						"payment_method"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9191/rest/v1.0/payment_method/1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9191/rest/v1.0/payment_method/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9191",
+					"path": [
+						"rest",
+						"v1.0",
+						"payment_method",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9191/rest/v1.0/payment_type",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9191/rest/v1.0/payment_type",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9191",
+					"path": [
+						"rest",
+						"v1.0",
+						"payment_type"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9191/rest/v1.0/payment_type/1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9191/rest/v1.0/payment_type/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9191",
+					"path": [
+						"rest",
+						"v1.0",
+						"payment_type",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9191/rest/v1.0/make_payment",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9191/rest/v1.0/make_payment",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9191",
+					"path": [
+						"rest",
+						"v1.0",
+						"make_payment"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9191/rest/v1.0/make_payment/1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9191/rest/v1.0/make_payment/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9191",
+					"path": [
+						"rest",
+						"v1.0",
+						"make_payment",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9191/rest/v1.0/make_payment",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\" : \"AAAA\",\n\t\"amount\" : \"20000\",\n\t\"paymentDate\" : \"2020-03-21T16:51:29.000+0000\",\n\t\"paymentMethodId\" : \"1\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9191/rest/v1.0/make_payment",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9191",
+					"path": [
+						"rest",
+						"v1.0",
+						"make_payment"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9191/rest/v1.0/make_payment/1",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\" : \"AAAA\",\n\t\"amount\" : \"400000\",\n\t\"paymentDate\" : \"2020-03-21T16:51:29.000+0000\",\n\t\"paymentMethodId\" : \"1\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9191/rest/v1.0/make_payment/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9191",
+					"path": [
+						"rest",
+						"v1.0",
+						"make_payment",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9191/rest/v1.0/receive_payment",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9191/rest/v1.0/receive_payment",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9191",
+					"path": [
+						"rest",
+						"v1.0",
+						"receive_payment"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9191/rest/v1.0/receive_payment/1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9191/rest/v1.0/receive_payment/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9191",
+					"path": [
+						"rest",
+						"v1.0",
+						"receive_payment",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9191/rest/v1.0/receive_payment",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\" : \"AAAA\",\n\t\"amount\" : \"20000\",\n\t\"paymentDate\" : \"2020-03-21T16:51:29.000+0000\",\n\t\"paymentMethodId\" : \"1\",\n\t\"paymentTypeId\" : \"2\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9191/rest/v1.0/receive_payment",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9191",
+					"path": [
+						"rest",
+						"v1.0",
+						"receive_payment"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9191/rest/v1.0/receive_payment/1",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\" : \"AAAA\",\n\t\"amount\" : \"20000\",\n\t\"paymentDate\" : \"2020-03-21T16:51:29.000+0000\",\n\t\"paymentMethodId\" : \"2\",\n\t\"paymentTypeId\" : \"2\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9191/rest/v1.0/receive_payment/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9191",
+					"path": [
+						"rest",
+						"v1.0",
+						"receive_payment",
+						"1"
+					]
+				}
+			},
+			"response": []
 		}
 	],
 	"protocolProfileBehavior": {}

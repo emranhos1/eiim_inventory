@@ -30,9 +30,9 @@ public class T01006 {
     @Column(name = "t_product_qty")
     private int productQty;
     @Column(name = "t_amount")
-    private String amount;
+    private Double amount;
     @Column(name = "t_due_amount")
-    private String dueAmount;
+    private Double dueAmount;
     @Column(name = "t_transport_id")
     private int transportId;
     @Column(name = "t_transport_contact_no")
@@ -81,19 +81,19 @@ public class T01006 {
         this.productQty = productQty;
     }
 
-    public String getAmount() {
+    public Double getAmount() {
         return amount;
     }
 
-    public void setAmount(String amount) {
+    public void setAmount(Double amount) {
         this.amount = amount;
     }
 
-    public String getDueAmount() {
+    public Double getDueAmount() {
         return dueAmount;
     }
 
-    public void setDueAmount(String dueAmount) {
+    public void setDueAmount(Double dueAmount) {
         this.dueAmount = dueAmount;
     }
 

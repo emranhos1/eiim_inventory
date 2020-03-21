@@ -33,7 +33,7 @@ public class T01007ServiceImpl implements T01007Service {
                    + "FROM T01007 s "
                    + "LEFT JOIN T01002 v ON s.t_vendor_id = v.t_vendor_id "
                    + "LEFT JOIN T01005 t ON s.t_transport_id = t.t_transport_id";
-     return jdbcTemplate.query( sql, new T01007RowMapper());
+        return jdbcTemplate.query( sql, new T01007RowMapper());
     }
 
     @Override

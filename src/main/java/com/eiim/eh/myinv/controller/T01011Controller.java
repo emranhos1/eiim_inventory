@@ -18,9 +18,9 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.eiim.eh.myinv.entity.T01007;
-import com.eiim.eh.myinv.pojo.T01007Pojo;
-import com.eiim.eh.myinv.service.T01007Service;
+import com.eiim.eh.myinv.entity.T01011;
+import com.eiim.eh.myinv.pojo.T01011Pojo;
+import com.eiim.eh.myinv.service.T01011Service;
 
 /**
  * @author  : Md. Emran Hossain<emranhos1@gmail.com>
@@ -29,56 +29,56 @@ import com.eiim.eh.myinv.service.T01007Service;
  * @create  : 2020-03-21T10:28:00
  */
 @RestController
-@RequestMapping("/rest/v1.0/order")
-public class T01007Controller {
+@RequestMapping("/rest/v1.0/receive_payment")
+public class T01011Controller {
 
     @Autowired
-    T01007Service t01007Service;
+    T01011Service t01011Service;
 
     @GetMapping
     public Map<String, Object> findAll() throws IOException {
         Map<String, Object> response = new HashMap<String, Object>();
 
-        List<T01007Pojo> allOrder = t01007Service.findAll();
-        int total = allOrder.size();
-        if(!CollectionUtils.isEmpty(allOrder)){
-            response.put("data", allOrder);
+        List<T01011Pojo> allReceivePayment = t01011Service.findAll();
+        int total = allReceivePayment.size();
+        if(!CollectionUtils.isEmpty(allReceivePayment)){
+            response.put("data", allReceivePayment);
         } else {
             response.put("data", null);
         }
 
         response.put("total", total);
-        response.put("success", CollectionUtils.isEmpty(allOrder) ? false : true);
-        response.put("message", CollectionUtils.isEmpty(allOrder) ? "No Record Found" : "Records Found");
+        response.put("success", CollectionUtils.isEmpty(allReceivePayment) ? false : true);
+        response.put("message", CollectionUtils.isEmpty(allReceivePayment) ? "No Record Found" : "Records Found");
 
         return response;
     }
 
-    @GetMapping("/{orderCode}")
-    public Map<String, Object> findByCode(@PathVariable("orderCode") int orderCode) throws IOException {
+    @GetMapping("/{receivePaymentCode}")
+    public Map<String, Object> findByCode(@PathVariable("receivePaymentCode") int receivePaymentCode) throws IOException {
         Map<String, Object> response = new HashMap<String, Object>();
 
-        T01007Pojo orderDetails = t01007Service.findById(orderCode);
-        if(!ObjectUtils.isEmpty(orderDetails)){
-            response.put("data", orderDetails);
+        T01011Pojo makePaymentDetails = t01011Service.findById(receivePaymentCode);
+        if(!ObjectUtils.isEmpty(receivePaymentCode)){
+            response.put("data", makePaymentDetails);
         } else {
             response.put("data", null);
         }
 
-        response.put("total", ObjectUtils.isEmpty(orderDetails) ? 0 : 1);
-        response.put("success", ObjectUtils.isEmpty(orderDetails) ? false : true);
-        response.put("message", ObjectUtils.isEmpty(orderDetails) ? "No Record Found" : "Records Found");
+        response.put("total", ObjectUtils.isEmpty(makePaymentDetails) ? 0 : 1);
+        response.put("success", ObjectUtils.isEmpty(makePaymentDetails) ? false : true);
+        response.put("message", ObjectUtils.isEmpty(makePaymentDetails) ? "No Record Found" : "Records Found");
 
         return response;
     }
 
     @PostMapping
-    public Map<String, Object> create(@RequestBody T01007 t01007) {
+    public Map<String, Object> create(@RequestBody T01011 t01011) {
         Map<String, Object> response = new HashMap<String, Object>();
 
-        t01007.setIsActive(1);
-        t01007.setEntryDate(new Date());
-        T01007 data = t01007Service.insert(t01007);
+        t01011.setIsActive(1);
+        t01011.setEntryDate(new Date());
+        T01011 data = t01011Service.insert(t01011);
         if (!ObjectUtils.isEmpty(data)) {
             response.put("date", data);
         } else {
@@ -92,19 +92,19 @@ public class T01007Controller {
         return response;
     }
 
-    @PutMapping("/{orderCode}")
-    public Map<String, Object> updateByPatno(@PathVariable("orderCode") int orderCode, @RequestBody T01007 t01007) {
+    @PutMapping("/{receivePaymentCode}")
+    public Map<String, Object> updateByPatno(@PathVariable("receivePaymentCode") int receivePaymentCode, @RequestBody T01011 t01011) {
         Map<String, Object> response = new HashMap<String, Object>();
         int total = 0;
 
-        if(!StringUtils.isEmpty(orderCode)){
-            t01007.setOrderId(orderCode);
-            T01007 getDetails = t01007Service.findByShipmentId(orderCode);
+        if(!StringUtils.isEmpty(receivePaymentCode)){
+            t01011.setReceivePaymentId(receivePaymentCode);
+            T01011Pojo getDetails = t01011Service.findById(receivePaymentCode);
 
-            t01007.setIsActive(getDetails.getIsActive());
-            t01007.setEntryDate(getDetails.getEntryDate());
-            t01007.setUpdateDate(new Date());
-            T01007 responseData = t01007Service.update(t01007);
+            t01011.setIsActive(getDetails.getIsActive());
+            t01011.setEntryDate(getDetails.getEntryDate());
+            t01011.setUpdateDate(new Date());
+            T01011 responseData = t01011Service.update(t01011);
             if (!ObjectUtils.isEmpty(responseData)) {
                 response.put("data", responseData);
                 response.put("total", 1);

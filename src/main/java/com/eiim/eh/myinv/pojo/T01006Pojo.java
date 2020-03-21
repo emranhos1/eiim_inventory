@@ -14,8 +14,8 @@ public class T01006Pojo {
     private int shipmentId;
     private String product;
     private int productQty;
-    private String amount;
-    private String dueAmount;
+    private Double amount;
+    private Double dueAmount;
     @DateTimeFormat(pattern = "yyyy-MM-dd'T'HH:mm:ss")
     private Date deliveryDate;
     private int isActive;
@@ -58,19 +58,19 @@ public class T01006Pojo {
         this.productQty = productQty;
     }
 
-    public String getAmount() {
+    public Double getAmount() {
         return amount;
     }
 
-    public void setAmount(String amount) {
+    public void setAmount(Double amount) {
         this.amount = amount;
     }
 
-    public String getDueAmount() {
+    public Double getDueAmount() {
         return dueAmount;
     }
 
-    public void setDueAmount(String dueAmount) {
+    public void setDueAmount(Double dueAmount) {
         this.dueAmount = dueAmount;
     }
 

@@ -16,8 +16,8 @@ public class T01007RowMapper implements RowMapper<T01007Pojo> {
         pojo.setOrderId(rs.getInt("t_order_id"));
         pojo.setProduct(rs.getString("t_product"));
         pojo.setProductQty(rs.getInt("t_product_qty"));
-        pojo.setAmount(rs.getString("t_amount"));
-        pojo.setDueAmount(rs.getString("t_due_amount"));
+        pojo.setAmount(rs.getDouble("t_amount"));
+        pojo.setDueAmount(rs.getDouble("t_due_amount"));
         pojo.setDeliveryDate(rs.getTimestamp("t_delivery_date"));
         pojo.setIsActive(rs.getInt("t_is_active"));
         pojo.setEntryDate(rs.getTimestamp("t_entry_date"));
